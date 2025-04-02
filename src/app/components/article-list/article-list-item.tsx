@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import Styles from "./article-list-item.module.css";
 
 interface ArticleListItemProps {
     name: string;
@@ -14,32 +15,26 @@ interface ArticleListItemProps {
 
 const ArticleListItem: React.FC<ArticleListItemProps> = ({ name, title, description, image }) => {
     return (
-        <li className="staff_item">
+        <li className={Styles["staff_item"]}>
             <Image
                 src={image.src}
                 alt={image.alt || ''}
                 width={80}
                 height={80}
-                className="staff_avatar"
+                className={Styles["staff_avatar"]}
                 loading="lazy"
             />
-            <div className="w-layout-vflex">
-                <div className="margin-bottom-16">
+            <div className={Styles["w-layout-vflex"]}>
+                <div className="mb-1">
                     <p
-                        className="text-size-eyebrow"
-                        style={{
-                            opacity: 1,
-                            transform:
-                                'translate3d(0px, 0em, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)',
-                            transformStyle: 'preserve-3d',
-                        }}
+                        className={Styles["text-size-eyebrow"]}
                     >
                         {name}
                     </p>
                 </div>
-                <div className="margin-bottom-16">
+                <div className="mb-1">
                     <Link href={`/blog/${name}`}>
-                        <h3 className="heading-style-h3">{title}</h3>
+                        <h3 className={Styles["heading-style-h3"]}>{title}</h3>
                     </Link>
                 </div>
                 <p>{description}</p>

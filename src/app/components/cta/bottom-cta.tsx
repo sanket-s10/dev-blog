@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
-import BottomCTAImage from "../../../public/bottom-cta-background.jpg"
+// import BottomCTAImage from "../../../public/bottom-cta-background.jpg"
 
 const BottomCTA: FC = () => {
   return (
@@ -67,7 +67,7 @@ const BottomCTA: FC = () => {
               <div className="video_bg_overlay">
 
               <Image
-                src={BottomCTAImage}
+                src="/bottom-cta-background.jpg"
                 alt="Join a camp"
               />
               </div>

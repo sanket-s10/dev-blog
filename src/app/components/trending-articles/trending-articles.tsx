@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
-import ArticleListItem from "./article-list-item";
+import ArticleListItem from "../article-list/article-list-item";
 import { TrendingArticle } from "./TrendingArticles";
 import styles from "./TrendingArticles.module.css";
 
