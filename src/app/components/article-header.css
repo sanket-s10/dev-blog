@@ -1,0 +1,157 @@
+.text-color-black-900 {
+  color: var(--black_900);
+}
+
+.text-sm {
+  letter-spacing: -.14px;
+  margin-bottom: 0;
+  font-family: Inter, sans-serif;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.text-weight-medium {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+}
+
+.blog-headline-element-block {
+  max-width: 820px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.blog-type {
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  margin-bottom: .75rem;
+  padding: .5rem .75rem;
+  display: inline-block;
+}
+
+
+.blog-headline-element-block {
+  display: block;
+}
+
+.blog-type {
+  transform-style: preserve-3d;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-weight-medium {
+  font-weight: 500;
+}
+
+.text-color-black-900 {
+  color: #0c0407;
+}
+
+.blog-hero-headline {
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 600;
+  color: #0c0407;
+}
+
+.text-weight-semibold {
+  font-weight: 600;
+}
+
+.blog-intro-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+}
+
+.text-base {
+  font-size: 16px;
+}
+
+.text-color-black-600 {
+  color: #666;
+}
+
+.blog-publish-info-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.author-info-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.author-image-block img.author-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.author-info-text-wrapper {
+  margin-left: 12px;
+}
+
+.author-name-text {
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #0c0407;
+}
+
+.author-designation-text {
+  font-size: 14px;
+  color: #333;
+}
+
+.blog-publish-info-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.blog-publish-date-block,
+.blog-read-time-block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blog-publish-date-text,
+.blog-read-time-text {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #333;
+}
+
+.calender-image,
+.clock-image {
+  width: 16px;
+  height: 16px;
+}
+
+/* Media Query Example */
+@media screen and (min-width: 1440px) {
+  .blog-headline-element-block,
+  .blog-main-content-wrapper {
+    max-width: 920px;
+  }
+
+  .blog-hero-image {
+    max-height: 845px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .blog-headline-element-block {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
